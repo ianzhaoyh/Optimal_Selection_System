@@ -46,25 +46,25 @@ Mathematically it is a variant of the classic Set Cover problem with multiplicit
 
 ## 4 Repository Structure  
 Optimal_Selection_System/
-├── Algorithm.py          # Unified interface: calls Beam or Greedy based on inputs
-├── Beam.py               # Beam Search with bitmask optimization and α-RCL strategy
-├── Greedy.py             # Greedy algorithm for approximate solutions when n ≥ 12
-├── config.py             # Global state management (e.g., threading flag)
-├── db.py                 # Database access logic (optional / for extension)
-├── front.py              # GUI entry script (Tkinter or other frontend)
-├── front.spec            # PyInstaller build specification
-├── front.exe             # Compiled executable (for Windows users)
-├── README.md             # Project documentation
-├── speech_draft.pdf      # Final presentation or speech draft
-├── __pycache__/          # Python bytecode cache
+├── Algorithm.py         # Unified interface: calls Beam or Greedy based on inputs
+├── Beam.py              # Beam Search with bitmask optimization and α-RCL strategy
+├── Greedy.py            # Greedy algorithm for approximate solutions when n ≥ 12
+├── config.py            # Global state management (e.g., threading flag)
+├── db.py                # Database access logic (optional / for extension)
+├── front.py             # GUI entry script (Tkinter or other frontend)
+├── front.spec           # PyInstaller build specification
+├── front.exe            # Compiled executable (for Windows users)
+├── README.md            # Project documentation
+├── speech_draft.pdf     # Final presentation or speech draft
+├── __pycache__/         # Python bytecode cache
 │   ├── AI.cpython-312.pyc
 │   └── config.cpython-312.pyc
-├── build/                # Intermediate build files (from PyInstaller)
+├── build/               # Intermediate build files (from PyInstaller)
 │   └── front/
-├── dist/                 # Final compiled output (includes front.exe)
+├── dist/                # Final compiled output (includes front.exe)
 │   ├── build/
 │   ├── db/
 │   ├── dist/
 │   ├── front/
 │   └── front.exe
-└── db/                   # Placeholder for future database files
+└── db/                  # Placeholder for future database files
