@@ -202,7 +202,7 @@ def Execute():
         a_B = a_text.get()
 
         # 参数a为用户输入的“at least samples”的值
-        a_B = a_text.get()
+        
         if m_text.get()==" " or n_B==" " or k_B==" " or j_B==" " or s_B==" " or content=="" or a_B==" ":
             messagebox.showwarning("Input error", "Please select samples first!")
             return False
@@ -210,7 +210,7 @@ def Execute():
         print("If the process takes too long, you may choose to ")
         print("stop it.")
         
-        global_t, global_s, global_e = back.manipulate(n_B, k_B, j_B, s_B, a_B)
+        global_t, global_s, global_e = back.manipulate(n_B,k_B,j_B,s_B,a_B)
         
         text_r.delete('1.0','end')
         if global_s == 0:
