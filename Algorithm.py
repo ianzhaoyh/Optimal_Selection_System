@@ -46,7 +46,7 @@ def manipulate(n, k, j, s, t=1, *, seed=0):
 
 # ---------------- Quick demo ----------------
 if __name__ == "__main__":
-    cases = [(13,6,5,5,1)]
+    cases = [(9,6,5,4,1),(12,6,5,4,1),(13,6,5,4,1),(16,6,5,4,1),(10,6,6,4,1),(12,6,6,4,1),(13,6,6,4,1),(16,6,6,4,1)]
     for n,k,j,s,t in cases:
         dt, m, sol = manipulate(n,k,j,s,t)
         print(f"n={n:<2d}  选 {m:2d} 组K  耗时 {dt:.4f}s  {sol[:3]} ...")
