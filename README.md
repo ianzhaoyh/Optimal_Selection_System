@@ -71,6 +71,12 @@ Optimal_Selection_System/
 │   └── front.exe
 └── db/                  # Placeholder for future database files
 ```
+## 🚀 Quickstart
 
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ianzhaoyh/Optimal_Selection_System.git
+cd Optimal_Selection_System
 
 
