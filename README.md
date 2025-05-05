@@ -46,25 +46,25 @@ Mathematically it is a variant of the classic Set Cover problem with multiplicit
 
 ## 4 Repository Structure  
 Optimal_Selection_System/
-├── Algorithm.py          # 主接口文件，统一调用 Beam 和 Greedy 方法
-├── Beam.py               # Beam Search 算法（用于 n < 12 或 at least t > 1）
-├── Greedy.py             # 简化贪心算法（用于 n >= 12 且 t = 1）
-├── config.py             # 全局共享状态或线程开关
-├── db.py                 # 数据库逻辑（如有）
-├── front.py              # 前端界面入口
-├── front.spec            # PyInstaller 打包配置文件
-├── front.exe             # 打包后的可执行程序
-├── README.md             # 项目说明文档
-├── speech_draft.pdf      # 演讲草稿或答辩文稿
-├── __pycache__/          # Python 编译缓存
+├── Algorithm.py          # Unified interface: calls Beam or Greedy based on inputs
+├── Beam.py               # Beam Search with bitmask optimization and α-RCL strategy
+├── Greedy.py             # Greedy algorithm for approximate solutions when n ≥ 12
+├── config.py             # Global state management (e.g., threading flag)
+├── db.py                 # Database access logic (optional / for extension)
+├── front.py              # GUI entry script (Tkinter or other frontend)
+├── front.spec            # PyInstaller build specification
+├── front.exe             # Compiled executable (for Windows users)
+├── README.md             # Project documentation
+├── speech_draft.pdf      # Final presentation or speech draft
+├── __pycache__/          # Python bytecode cache
 │   ├── AI.cpython-312.pyc
 │   └── config.cpython-312.pyc
-├── build/                # pyinstaller 的构建缓存目录
+├── build/                # Intermediate build files (from PyInstaller)
 │   └── front/
-├── dist/                 # 打包后文件目录
+├── dist/                 # Final compiled output (includes front.exe)
 │   ├── build/
 │   ├── db/
 │   ├── dist/
 │   ├── front/
 │   └── front.exe
-└── db/                   # 数据库文件夹（暂为空）
+└── db/                   # Placeholder for future database files
