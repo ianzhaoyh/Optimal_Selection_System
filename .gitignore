@@ -25,6 +25,8 @@ env/
 
 # PyCharm settings
 .idea/
+.db/
+*.txt
 
 # Mac OS
 .DS_Store
