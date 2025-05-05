@@ -78,5 +78,40 @@ Optimal_Selection_System/
 ```bash
 git clone https://github.com/ianzhaoyh/Optimal_Selection_System.git
 cd Optimal_Selection_System
+```
 
+### **2 – Install the runtime dependencies**
 
+(The project has no *requirements.txt*, so install the few packages manually.)
+
+```bash
+# create & activate a virtual-env if you like …
+pip install pulp pyinstaller
+```
+
+### **3 – Run the GUI in source form**
+
+```bash
+python front.py          # Windows / Linux
+python3 front.py         # macOS (or any system where Python 3 is python3)
+```
+
+### *4 – (Re-)build a Windows.exe with PyInstaller*
+
+Whenever you change **any** Python source, you must rebuild **front.exe**; the old binary contains only the code that was present when it was packed.
+```bash
+cd <project-root>        # folder that contains front.spec
+pyinstaller front.spec   # produces dist/front.exe
+```
+
+The fresh binary appears in dist/front.exe.
+Double-click it (or run from cmd/powershell) to launch the program.
+
+### **5 – Run the packaged app on macOS / Linux**
+
+If you pack the project on macOS / Linux with PyInstaller as well, the entry point will be an ELF / Mach-O file named **front** (no extension). Launch it from the terminal:
+```bash
+./dist/front
+```
+
+Make sure it is executable: chmod +x dist/front

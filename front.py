@@ -651,7 +651,9 @@ radio_buttons = [tk.Radiobutton(frame5,text="                      ",variable=se
 for l,Rbutton_List in enumerate(radio_buttons):
     Rbutton_List.grid(row=int(l/3), column=l%3, columnspan=2, padx=100,pady=5,sticky='W')
 
-path = os.path.abspath(os.path.dirname(sys.argv[0])) + "\\db\\"
+#path = os.path.abspath(os.path.dirname(sys.argv[0])) + "\\db\\"  win写法
+path = os.path.join(os.path.abspath(os.path.dirname(sys.argv[0])), "db")
+os.makedirs(path, exist_ok=True)  #跨平台写法
 flist = os.listdir(path)
 for each in flist:
     fno = int(each[0])
