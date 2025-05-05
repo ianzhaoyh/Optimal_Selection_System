@@ -91,9 +91,7 @@ def greedy_cover(n,k,j,s):
 
     testMap = Group_map
 
-    if type:
-        #greedy algorithm
-        while len(NJ_Mark)>0:
+    while len(NJ_Mark)>0:
             if(not thread_running.get()):
                 return 0,0,[]
             Max_Group_no = -1
@@ -120,3 +118,7 @@ def greedy_cover(n,k,j,s):
             
             NJ_Mark = NJ_Mark.difference(Group_map[Max_Group_no])
             Final_Ans.append(Max_Group_no)
+    result = [[i for i in group] for group in NK_Group]  # 将元组转换为列表
+    final_result = [result[i] for i in Final_Ans]
+    
+    return final_result
