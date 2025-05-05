@@ -44,7 +44,9 @@ Mathematically it is a variant of the classic Set Cover problem with multiplicit
 
 ---
 
-## 4 Repository Structure  
+## 4 Repository Structure
+
+```
 Optimal_Selection_System/
 ├── Algorithm.py         # Unified interface: calls Beam or Greedy based on inputs
 ├── Beam.py              # Beam Search with bitmask optimization and α-RCL strategy
@@ -68,3 +70,7 @@ Optimal_Selection_System/
 │   ├── front/
 │   └── front.exe
 └── db/                  # Placeholder for future database files
+```
+
+
+
